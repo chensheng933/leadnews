@@ -1,0 +1,14 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: leadnews-article
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.66.133:8848  # 服务注册发现
+        ephemeral: false  # 取消临时示例
+      config:
+        server-addr: 192.168.66.133:8848  # 服务配置管理
+        file-extension: yml  # Nacos配置文件的后缀名

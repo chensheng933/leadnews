@@ -1,0 +1,19 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: leadnews-search
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.66.133:8848  # 服务注册发现
+      config:
+        server-addr: 192.168.66.133:8848  # 服务配置管理
+        file-extension: yml  # Nacos配置文件的后缀名
+
+  data:
+   mongodb:
+     host: 192.168.66.133
+     port: 27017
+     database: leadnews-search
